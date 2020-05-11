@@ -2,18 +2,18 @@
 '''
 @Author: lamborghini1993
 @Date: 2020-05-09 14:13:10
-@UpdateDate: 2020-05-09 14:13:53
+@UpdateDate: 2020-05-11 15:09:19
 @Description: 发布包的配置
 '''
 
 import os
 from setuptools import setup, find_packages
 
-with open(os.path.join(os.path.dirname(__file__), "README.md")) as readme:
+with open(os.path.join(os.path.dirname(__file__), "README.md"), encoding="utf-8") as readme:
     README = readme.read()
 
 setup(
-    name='AStar',
+    name='xhAStar',
     version="0.0.1",
     author="lamborghini1993",
     author_email="1323242382@qq.com",

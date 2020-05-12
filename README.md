@@ -1,6 +1,7 @@
-- A*寻路算法
+- A*寻路算法 `pip install xhAStar`
 
 # 使用方法
+
 ```python3
 import astar
 w, h = 6, 3
@@ -9,7 +10,9 @@ walls = [(2, 1), (3, 1), (4, 1)]
 obj = astar.AStar(w, h, start, goal, walls, astar.MANHATTAN)
 print(obj.result)
 ```
-AStar参数说明
+
+AStar参数说明:
+
 - w (int): 长
 - h (int): 宽
 - start (Tuple[int, int]): 起始点

@@ -3,17 +3,17 @@
 @Description: 
 @Author: lamborghini1993
 @Date: 2020-05-09 16:14:23
-@UpdateDate: 2020-05-11 10:37:44
+@UpdateDate: 2020-05-12 20:48:04
 '''
 
-from . import astar
+import astar
 
 
 def test1():
     w, h = 6, 3
     start, goal = (0, 0), (3, 2)
     walls = [(2, 1), (3, 1), (4, 1)]
-    obj = astar.AStar(w, h, start, goal, walls, astar.MANHATTAN)
+    obj = astar.AStar(w, h, start, goal, walls, astar.DIAGONAL_DIS)
     print(obj.result)
 
 
